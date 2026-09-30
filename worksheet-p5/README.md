@@ -1,6 +1,6 @@
 Worksheet P5 — Layout Modern: Flexbox dan Grid
 
-Ringkasan perubahan / penambahan untuk folder `worksheet-p5`:
+m vyo fachmil fachry setiawan nim:25523238 `worksheet-p5`:
 
 - Kerangka 3 baris: gunakan grid pada `body.page` (header / main / footer).
 - Isi 2 kolom: `.site-main` menggunakan grid dua kolom `16rem 1fr` dengan `gap: var(--space-6)`.
