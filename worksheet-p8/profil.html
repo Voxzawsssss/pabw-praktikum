@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
+    <link rel="stylesheet" href="responsif.css">
+  </head>
+  <body class="theme-dark page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 id="site-title">Profil Saya</h1>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <ul>
+            <li><a href="#profil-saya">Profil</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+          </ul>
+        </nav>
+        <p class="meta" id="profile-meta"></p>
+      </div>
+    </header>
+
+    <main class="container site-main content">
+      <section id="profil-saya" class="panel" aria-labelledby="judul-profil">
+        <h2 id="judul-profil">Profil Saya</h2>
+        <div id="profile-intro" class="profile-intro"></div>
+      </section>
+
+      <section id="keahlian" class="panel" aria-labelledby="judul-keahlian">
+        <h2 id="judul-keahlian">Keahlian</h2>
+        <div id="skill-list" class="skill-list" aria-live="polite"></div>
+      </section>
+
+      <section id="proyek" class="panel" aria-labelledby="judul-proyek">
+        <h2 id="judul-proyek">Proyek</h2>
+        <div id="project-list" class="project-list" aria-live="polite"></div>
+      </section>
+
+      <aside id="tambah-buku" class="panel sidebar" aria-labelledby="judul-tambah">
+        <h2 id="judul-tambah">Status Saya</h2>
+        <div id="profile-status" class="status-box"></div>
+
+        <form class="book-form" action="#" method="post">
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input id="nama" name="nama" type="text" value="" readonly>
+          </div>
+
+          <div class="field">
+            <label for="nim">NIM</label>
+            <input id="nim" name="nim" type="text" value="" readonly>
+          </div>
+
+          <div class="field">
+            <label for="tahun">Tahun</label>
+            <input id="tahun" name="tahun" type="number" value="" readonly>
+          </div>
+
+          <button type="button">Lihat data</button>
+        </form>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container" id="footer-text"></div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
