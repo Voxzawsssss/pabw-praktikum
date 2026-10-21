@@ -1,0 +1,62 @@
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.book-table th,
+.book-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.book-table thead th {
+  color: var(--color-text);
+  background: rgba(148, 163, 184, 0.08);
+  font-size: var(--font-size-300);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.book-table tbody tr:hover {
+  background: rgba(139, 92, 246, 0.06);
+}
+
+.book-table img,
+.feature-cover img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-cover {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.feature-cover img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+}
+
+input::placeholder {
+  color: var(--color-text-muted);
+}
+
+input:focus,
+select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
+}
